@@ -1,0 +1,191 @@
+/*
+==============================
+        General Setup
+==============================
+*/
+
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100%;
+    min-width: 320px;
+    height: 100%;
+}
+
+html {
+    z-index: -1;
+
+    background: #0b0b3a7c;
+    background-image: -o-linear-gradient(350deg, rgba(75, 75, 157, 0.8), rgba(73, 78, 143, 0.7)),
+                url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+    background-image: linear-gradient(100deg, rgba(75, 75, 157, 0.8), rgba(73, 78, 143, 0.7)),
+                url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+body {
+    font: 100% Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    padding: 2px;
+}
+
+/*
+==============================
+        Typography
+==============================
+*/
+
+.text-center {
+    text-align: center;
+}
+
+.title {
+    font-size: 200%;
+    font-weight: 500;
+}
+
+.sub-title {
+    color: lightgrey;
+    font-size: 110%;
+    font-style: italic;
+    font-weight: 100;
+}
+
+.main {
+    font-size: 130%;
+    text-align: left;
+}
+
+.form-control {
+    font-size: 1rem;
+    color: #5c5c5c;
+    text-indent: .5rem;
+}
+
+/*
+==============================
+        Header Setup
+==============================
+*/
+
+.header {
+    margin: 0 auto;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.title {
+    margin-bottom: .5rem;
+    padding: 0 5px;
+}
+
+/*
+==============================
+        Main Setup
+==============================
+*/
+
+.main {
+    border-radius: 5px;
+    max-width: 700px;
+    height: auto;
+    margin: 0 auto;
+    padding: 1.5rem 2rem 0 2rem;
+    background-color: rgba(12, 13, 39, 0.7);
+}
+
+/*
+==============================
+        Form Setup
+==============================
+*/
+
+.form {
+    width: 100%;
+    height: 100%;
+}
+
+.form-section {
+    margin-bottom: 1.5rem;
+    
+}
+
+label {
+    display: flex;
+    align-items: center;
+    margin-bottom: .5rem
+}
+
+.form p {
+    margin-bottom: .5rem;
+}
+
+.form-control {
+    background-color: #ffffff;
+    width: 100%;
+    height: 2.5rem;
+    border: 0;
+    border-radius: 5px;
+}
+
+span {
+    margin-left: .2rem;
+    font-size: 70%;
+}
+
+.input-radio,
+.input-checkbox {
+    background-color: #ffffff;
+    width: 1.2rem;
+    height: 1.2rem;
+    line-height: 1rem;
+    border: 0;
+    border-radius: 5px;
+    margin-right: 1rem;
+}
+
+.textarea {
+    height: 10rem;
+}
+
+#submit {
+background-color: hsl(120, 52%, 44%);
+color: #ffffff;
+font-size: 1rem;
+height: 4rem;
+line-height: 3rem;
+}
+
+/*
+==============================
+        @Media Queries
+==============================
+*/
+
+@media (max-width: 450px) {
+    .title {
+        font-size: 150%;
+
+    }
+
+    .sub-title {
+        font-size: 100%;
+    }
+
+    .main {
+        font-size: 110%;
+    }
+}
